@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButton11"
+        app:srcCompat="@drawable/tab_item_home_normal" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButton10"
+        app:layout_constraintEnd_toStartOf="@id/imageButton12"
+        app:srcCompat="@drawable/tab_item_category_focus" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButton11"
+        app:layout_constraintEnd_toStartOf="@id/imageButton13"
+        app:srcCompat="@drawable/tab_item_cart_focus" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageButton12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tab_item_personal_focus" />
+</android.support.constraint.ConstraintLayout>
